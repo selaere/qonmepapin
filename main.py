@@ -128,7 +128,7 @@ async def cmd_bee(conn, event, args, send):
     while len(msg) + len(newword := (random.choice(sus)())) < length:
         msg += newword if random.random() < 0.7 else newword.upper()
         if random.random() < 0.7: msg += " "
-    send(msg.replace("  ", " ").strip())
+    send(msg.strip())
 
 
 @command("can")
