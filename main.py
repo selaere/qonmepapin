@@ -45,7 +45,7 @@ server, port, nickname, channels = "irc.osmarks.net", 6667, "qonmepapin", ["#aa"
 
 @event
 async def on_welcome(conn, event):
-    print("!!!")
+    print("done!!!")
     for chan in channels:
         conn.join(chan)
 
@@ -151,7 +151,7 @@ def main():
 
     reactor.loop.run_until_complete(
         reactor.server().connect(server, port, nickname))
-    print("bees")
+    print("connecting")
     reactor.process_forever()
 
 
