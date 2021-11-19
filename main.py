@@ -71,6 +71,7 @@ async def on_pubmsg(conn, event):
         else:
             send(f"{nickname} cannot {cmdname}.")
 
+
 @command("say")
 async def cmd_say(conn, event, args, send):
     send(args)
